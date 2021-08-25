@@ -9,25 +9,6 @@ data class ItauClientCorroboracaoResponse(
     val numero: String,
     val titular: ItauTitularResponse,
 ) {
-    fun getNomeDaInstituicao(): String {
-        return this.instituicao.nome
-    }
-
-    fun getIspbDaIntituicao(): String {
-        return this.instituicao.ispb
-    }
-
-    fun getIdDoTitular(): String {
-        return this.titular.id
-    }
-
-    fun getCpfDoTitular(): String {
-        return this.titular.cpf
-    }
-
-    fun getNomeDoTitular(): String {
-        return this.titular.nome
-    }
 }
 
 data class ItauInstituicaoResponse(

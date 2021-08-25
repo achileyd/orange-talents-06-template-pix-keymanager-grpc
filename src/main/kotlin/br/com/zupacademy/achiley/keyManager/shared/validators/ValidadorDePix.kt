@@ -2,7 +2,6 @@ package br.com.zupacademy.achiley.keyManager.shared.validators
 
 import br.com.zupacademy.achiley.TipoDeChaveEnum
 import br.com.zupacademy.achiley.TipoDeChaveEnum.*
-import br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint
 import jakarta.inject.Singleton
 import org.slf4j.LoggerFactory
 import java.lang.IllegalArgumentException

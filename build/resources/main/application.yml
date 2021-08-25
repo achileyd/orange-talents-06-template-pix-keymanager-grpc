@@ -1,0 +1,19 @@
+micronaut:
+  application:
+    name: keyManagerGrpc
+datasources:
+  default:
+    url: ${DB_URL:`jdbc:postgresql://localhost:5432/pix`}
+    driverClassName: org.postgresql.Driver
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:password}
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
+
+itau.client.url: ${ITAU_URL:`http://localhost:9091/api/v1`}

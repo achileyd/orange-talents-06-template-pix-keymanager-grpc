@@ -1,0 +1,47 @@
+version: '3'
+services:
+    bcb:
+        image: "public.ecr.aws/d8b2x5c9/orange-stack-sat-bcb-pix"
+        ports:
+            - 8082:8082
+
+    erp-itau:
+        image: "public.ecr.aws/d8b2x5c9/orange-stack-sat-itau-erp"
+        ports:
+            - 9091:9091
+
+    postgres:
+        image: 'postgres:alpine'
+        volumes:
+            - postgres-volume:/var/lib/postgresql/data
+        ports:
+            - 5432:5432
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: password
+            POSTGRES_DB: pix
+            POSTGRES_HOST: postgres
+        networks:
+            - pix-network
+#    key-manager-grpc:
+#        build:
+#            dockerfile: Dockerfile
+#            context: .
+#        image: achdias/key-manager-grpc
+#        container_name: key-manager-grpc
+#        ports:
+#            - 8081:8080
+#        depends_on:
+#            - postgres
+#        environment:
+#            DB_URL: jdbc:postgresql://postgres:5432/keyManagerGrpc
+#        networks:
+#        - pix-network
+
+volumes:
+    postgres-volume:
+        driver: local
+
+networks:
+    pix-network:
+        driver: bridge

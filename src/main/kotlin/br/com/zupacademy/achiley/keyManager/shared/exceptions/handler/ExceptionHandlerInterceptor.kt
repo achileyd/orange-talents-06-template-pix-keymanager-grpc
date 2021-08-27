@@ -2,6 +2,7 @@ package br.com.zupacademy.achiley.keyManager.shared.exceptions.handler
 
 import br.com.zupacademy.achiley.keyManager.shared.exceptions.AlreadyExistsException
 import br.com.zupacademy.achiley.keyManager.shared.exceptions.ClientErrorException
+import br.com.zupacademy.achiley.keyManager.shared.exceptions.ForbiddenException
 import br.com.zupacademy.achiley.keyManager.shared.exceptions.NotFoundException
 import com.google.rpc.BadRequest
 import io.grpc.BindableService
@@ -38,6 +39,7 @@ class ExceptionHandlerInterceptor: MethodInterceptor<BindableService, Any?> {
                 is ConstraintViolationException -> handleConstraintViolationException(e)
                 is NotFoundException -> Status.NOT_FOUND.withDescription(e.message).asRuntimeException()
                 is ClientErrorException -> Status.UNAVAILABLE.withDescription(e.message).asRuntimeException()
+                is ForbiddenException -> Status.PERMISSION_DENIED.withDescription(e.message).asRuntimeException()
                 else -> Status.UNKNOWN.withDescription("Erro inesperado").asRuntimeException()
             }
 

@@ -24,6 +24,11 @@ public final class KeyManagerGrpc {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_br_com_zupacademy_achiley_CadastroPixResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_br_com_zupacademy_achiley_DeletaPixRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_br_com_zupacademy_achiley_DeletaPixRequest_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -34,26 +39,31 @@ public final class KeyManagerGrpc {
   static {
     java.lang.String[] descriptorData = {
       "\n\024keyManagerGrpc.proto\022\031br.com.zupacadem" +
-      "y.achiley\"\270\001\n\022CadastroPixRequest\022?\n\013tipo" +
-      "DeChave\030\001 \001(\0162*.br.com.zupacademy.achile" +
-      "y.TipoDeChaveEnum\022\r\n\005chave\030\002 \001(\t\022\021\n\tclie" +
-      "nteId\030\003 \001(\t\022?\n\013tipoDeConta\030\004 \001(\0162*.br.co" +
-      "m.zupacademy.achiley.TipoDeContaEnum\"$\n\023" +
-      "CadastroPixResponse\022\r\n\005pixId\030\001 \001(\t*T\n\017Ti" +
-      "poDeChaveEnum\022\024\n\020UNRECOGNIZED_KEY\020\000\022\007\n\003C" +
-      "PF\020\001\022\013\n\007CELULAR\020\002\022\t\n\005EMAIL\020\003\022\n\n\006RANDOM\020\004" +
-      "*S\n\017TipoDeContaEnum\022\030\n\024UNRECOGNIZED_ACCO" +
-      "UNT\020\000\022\022\n\016CONTA_POUPANCA\020\001\022\022\n\016CONTA_CORRE" +
-      "NTE\020\0022\205\001\n\025KeyManagerGrpcService\022l\n\tcadas" +
-      "trar\022-.br.com.zupacademy.achiley.Cadastr" +
-      "oPixRequest\032..br.com.zupacademy.achiley." +
-      "CadastroPixResponse\"\000B3\n\031br.com.zupacade" +
-      "my.achileyB\016KeyManagerGrpcP\001\242\002\003HLWb\006prot" +
-      "o3"
+      "y.achiley\032\033google/protobuf/empty.proto\"\270" +
+      "\001\n\022CadastroPixRequest\022?\n\013tipoDeChave\030\001 \001" +
+      "(\0162*.br.com.zupacademy.achiley.TipoDeCha" +
+      "veEnum\022\r\n\005chave\030\002 \001(\t\022\021\n\tclienteId\030\003 \001(\t" +
+      "\022?\n\013tipoDeConta\030\004 \001(\0162*.br.com.zupacadem" +
+      "y.achiley.TipoDeContaEnum\"$\n\023CadastroPix" +
+      "Response\022\r\n\005pixId\030\001 \001(\t\"4\n\020DeletaPixRequ" +
+      "est\022\021\n\tclienteId\030\001 \001(\t\022\r\n\005pixId\030\002 \001(\t*T\n" +
+      "\017TipoDeChaveEnum\022\024\n\020UNRECOGNIZED_KEY\020\000\022\007" +
+      "\n\003CPF\020\001\022\013\n\007CELULAR\020\002\022\t\n\005EMAIL\020\003\022\n\n\006RANDO" +
+      "M\020\004*S\n\017TipoDeContaEnum\022\030\n\024UNRECOGNIZED_A" +
+      "CCOUNT\020\000\022\022\n\016CONTA_POUPANCA\020\001\022\022\n\016CONTA_CO" +
+      "RRENTE\020\0022\205\001\n\025KeyManagerGrpcService\022l\n\tca" +
+      "dastrar\022-.br.com.zupacademy.achiley.Cada" +
+      "stroPixRequest\032..br.com.zupacademy.achil" +
+      "ey.CadastroPixResponse\"\0002k\n\027KeyManagerDe" +
+      "leteService\022P\n\007deletar\022+.br.com.zupacade" +
+      "my.achiley.DeletaPixRequest\032\026.google.pro" +
+      "tobuf.Empty\"\000B3\n\031br.com.zupacademy.achil" +
+      "eyB\016KeyManagerGrpcP\001\242\002\003HLWb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          com.google.protobuf.EmptyProto.getDescriptor(),
         });
     internal_static_br_com_zupacademy_achiley_CadastroPixRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -67,6 +77,13 @@ public final class KeyManagerGrpc {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_br_com_zupacademy_achiley_CadastroPixResponse_descriptor,
         new java.lang.String[] { "PixId", });
+    internal_static_br_com_zupacademy_achiley_DeletaPixRequest_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_br_com_zupacademy_achiley_DeletaPixRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_br_com_zupacademy_achiley_DeletaPixRequest_descriptor,
+        new java.lang.String[] { "ClienteId", "PixId", });
+    com.google.protobuf.EmptyProto.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

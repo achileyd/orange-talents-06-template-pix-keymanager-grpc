@@ -27,5 +27,7 @@ class ChavePix(
     @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
     var pixId: String? = null
     val criadoEm: LocalDateTime = LocalDateTime.now()
+
+    fun pertenceAoClienteId(id: String): Boolean = this.clienteId == id
 }
 

@@ -6,4 +6,5 @@ import io.micronaut.data.jpa.repository.JpaRepository
 @Repository
 interface ChavePixRepository : JpaRepository<ChavePix, String> {
     fun existsByChave(chave: String): Boolean
+    fun existsByClienteId(clienteId: String): Boolean
 }

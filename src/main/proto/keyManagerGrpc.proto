@@ -7,8 +7,13 @@ option objc_class_prefix = "HLW";
 
 package br.com.zupacademy.achiley;
 
+import "google/protobuf/empty.proto";
+
 service KeyManagerGrpcService {
   rpc cadastrar (CadastroPixRequest) returns (CadastroPixResponse) {}
+}
+service KeyManagerDeleteService {
+  rpc deletar (DeletaPixRequest) returns (google.protobuf.Empty) {}
 }
 
 enum TipoDeChaveEnum {
@@ -35,4 +40,9 @@ message CadastroPixRequest {
 
 message CadastroPixResponse {
   string pixId = 1;
+}
+
+message DeletaPixRequest{
+  string clienteId = 1;
+  string pixId = 2;
 }

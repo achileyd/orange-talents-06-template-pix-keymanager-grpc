@@ -7,7 +7,6 @@ import br.com.zupacademy.achiley.TipoDeContaEnum
 import br.com.zupacademy.achiley.keyManager.integracoes.ItauClient
 import br.com.zupacademy.achiley.keyManager.integracoes.ItauClientCorroboracaoResponse
 import br.com.zupacademy.achiley.keyManager.pix.creators.criaItauResponse
-import br.com.zupacademy.achiley.keyManager.shared.exceptions.ClientErrorException
 import io.grpc.ManagedChannel
 import io.grpc.Status
 import io.grpc.StatusRuntimeException

@@ -2,5 +2,8 @@ br.com.zupacademy.achiley.keyManager.pix.$CadastroPixEndpointTest$Clients$Blocki
 br.com.zupacademy.achiley.keyManager.pix.$CadastroPixEndpointTest$ItauClientMock0$Definition$Intercepted$Definition$Reference
 br.com.zupacademy.achiley.keyManager.pix.$CadastroPixEndpointTest$Definition$Reference
 br.com.zupacademy.achiley.keyManager.pix.$CadastroPixEndpointTest$Clients$Definition$Reference
+br.com.zupacademy.achiley.keyManager.pix.$DeletaPixEndpointTest$Definition$Reference
 br.com.zupacademy.achiley.keyManager.$KeyManagerGrpcTest$Definition$Reference
+br.com.zupacademy.achiley.keyManager.pix.$DeletaPixEndpointTest$GrpcForDeleteTest$BlockingStub0$Definition$Reference
+br.com.zupacademy.achiley.keyManager.pix.$DeletaPixEndpointTest$GrpcForDeleteTest$Definition$Reference
 br.com.zupacademy.achiley.keyManager.pix.$CadastroPixEndpointTest$ItauClientMock0$Definition$Reference

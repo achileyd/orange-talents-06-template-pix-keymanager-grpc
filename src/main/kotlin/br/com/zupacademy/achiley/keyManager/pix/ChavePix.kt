@@ -1,6 +1,7 @@
 package br.com.zupacademy.achiley.keyManager.pix
 
 import br.com.zupacademy.achiley.TipoDeChaveEnum
+import br.com.zupacademy.achiley.TipoDeContaEnum
 import org.hibernate.annotations.GenericGenerator
 import java.time.LocalDateTime
 import javax.persistence.*
@@ -20,7 +21,7 @@ class ChavePix(
     val clienteId: String,
     @field:NotBlank
     @Enumerated(EnumType.STRING)
-    val tipoDeConta: br.com.zupacademy.achiley.TipoDeContaEnum
+    val tipoDeConta: TipoDeContaEnum
 ) {
     @Id
     @GeneratedValue(generator = "UUID")

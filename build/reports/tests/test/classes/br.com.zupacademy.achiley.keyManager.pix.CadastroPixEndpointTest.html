@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.083s</div>
+<div class="counter">1.648s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,57 +82,57 @@
 </thead>
 <tr>
 <td class="success">deve cadastrar uma nova chave pix com tipo de chave email()</td>
-<td class="success">0.020s</td>
+<td class="success">0.030s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">deve cadastrar uma nova chave pix com tipo de chave random()</td>
-<td class="success">0.033s</td>
+<td class="success">0.072s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">nao deve cadastrar uma chave pix com formato de celular invalido()</td>
-<td class="success">0.013s</td>
+<td class="success">0.020s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">nao deve cadastrar uma chave pix com formato de cpf invalido()</td>
-<td class="success">0.010s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">nao deve cadastrar uma chave pix com formato de email invalido()</td>
-<td class="success">0.008s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">nao deve cadastrar uma chave pix com tipo de chave random e campo chave preenchido()</td>
-<td class="success">0.010s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">nao deve cadastrar uma chave pix com tipo de chave unrecognized key()</td>
-<td class="success">0.012s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">nao deve cadastrar uma chave pix com tipo de conta unregonized account()</td>
-<td class="success">0.023s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">nao deve cadastrar uma chave pix duplicada()</td>
-<td class="success">0.927s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">nao deve cadastrar uma chave pix quando o itau client retorna um erro()</td>
 <td class="success">0.017s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">nao deve cadastrar uma chave pix com formato de email invalido()</td>
+<td class="success">0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nao deve cadastrar uma chave pix com tipo de chave random e campo chave preenchido()</td>
+<td class="success">0.030s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nao deve cadastrar uma chave pix com tipo de chave unrecognized key()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nao deve cadastrar uma chave pix com tipo de conta unregonized account()</td>
+<td class="success">0.042s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nao deve cadastrar uma chave pix duplicada()</td>
+<td class="success">1.348s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">nao deve cadastrar uma chave pix quando o itau client retorna um erro()</td>
+<td class="success">0.032s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">nao deve cadastrar uma chave pix quando o itau nao encontra os dados()</td>
-<td class="success">0.010s</td>
+<td class="success">0.023s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -140,124 +140,128 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>?[36m21:03:17.693?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
-?[36m21:03:17.952?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Starting...
-?[36m21:03:18.134?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Start completed.
-?[36m21:03:18.331?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.Version?[0;39m - HHH000412: Hibernate ORM core version 5.5.3.Final
-?[36m21:03:18.490?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.h.annotations.common.Version?[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-?[36m21:03:18.593?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.dialect.Dialect?[0;39m - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+<pre>?[36m23:43:05.925?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
+?[36m23:43:06.743?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Starting...
+?[36m23:43:07.210?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Start completed.
+?[36m23:43:07.522?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.Version?[0;39m - HHH000412: Hibernate ORM core version 5.5.3.Final
+?[36m23:43:07.753?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mo.h.annotations.common.Version?[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+?[36m23:43:07.986?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35morg.hibernate.dialect.Dialect?[0;39m - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 Hibernate: create table chave_pix (pix_id varchar(255) not null, chave varchar(255) not null, cliente_id varchar(255), criado_em timestamp, tipo_de_chave varchar(255) not null, tipo_de_conta varchar(255), primary key (pix_id))
 Hibernate: alter table chave_pix drop constraint if exists UK_2rc2bn1uhdfjiqgc3guec2xkv
 Hibernate: alter table chave_pix add constraint UK_2rc2bn1uhdfjiqgc3guec2xkv unique (chave)
 Hibernate: delete from chave_pix
 Hibernate: insert into chave_pix (chave, cliente_id, criado_em, tipo_de_chave, tipo_de_conta, pix_id) values (?, ?, ?, ?, ?, ?)
-?[36m21:03:20.224?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
-?[36m21:03:20.224?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
-?[36m21:03:20.225?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
-?[36m21:03:20.225?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: EMAIL
-?[36m21:03:20.226?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
+?[36m23:43:10.662?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
+?[36m23:43:10.663?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
+?[36m23:43:10.663?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
+?[36m23:43:10.663?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: EMAIL
+?[36m23:43:10.667?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
-?[36m21:03:20.248?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[31mWARN ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Chave pix goku@email.com ja cadastrada
+?[36m23:43:10.713?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[31mWARN ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Chave pix goku@email.com ja cadastrada
 Hibernate: delete from chave_pix
-?[36m21:03:20.274?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
-?[36m21:03:20.274?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
-?[36m21:03:20.274?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
-?[36m21:03:20.275?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: CELULAR
-Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
-Hibernate: delete from chave_pix
-?[36m21:03:20.288?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
-?[36m21:03:20.288?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
-?[36m21:03:20.288?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
-?[36m21:03:20.289?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: UNRECOGNIZED_KEY
+?[36m23:43:10.755?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
+?[36m23:43:10.755?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
+?[36m23:43:10.755?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
+?[36m23:43:10.756?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: CELULAR
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
 Hibernate: delete from chave_pix
-?[36m21:03:20.300?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
-?[36m21:03:20.300?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
-?[36m21:03:20.300?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
-?[36m21:03:20.300?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: CELULAR
-?[36m21:03:20.300?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
-Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
-?[36m21:03:20.301?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.integracoes.CorroboradorDeDadosItau br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getCorroborador()
-?[36m21:03:20.308?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Corroborando dados do clienteId de95a228-1f27-4ad2-907e-e5a2d816e9bc e tipo de conta UNRECOGNIZED_ACCOUNT
-?[36m21:03:20.314?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - A corroboraçao de dados foi realizada com sucesso. Status retornado: OK
+?[36m23:43:10.776?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
+?[36m23:43:10.776?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
+?[36m23:43:10.776?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
+?[36m23:43:10.776?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: UNRECOGNIZED_KEY
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
 Hibernate: delete from chave_pix
-?[36m21:03:20.323?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
-?[36m21:03:20.323?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
-?[36m21:03:20.323?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
-?[36m21:03:20.324?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: RANDOM
-?[36m21:03:20.335?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
+?[36m23:43:10.796?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
+?[36m23:43:10.797?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
+?[36m23:43:10.797?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
+?[36m23:43:10.797?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: CELULAR
+?[36m23:43:10.797?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
-?[36m21:03:20.336?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.integracoes.CorroboradorDeDadosItau br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getCorroborador()
-?[36m21:03:20.336?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Corroborando dados do clienteId de95a228-1f27-4ad2-907e-e5a2d816e9bc e tipo de conta CONTA_CORRENTE
-?[36m21:03:20.337?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - A corroboraçao de dados foi realizada com sucesso. Status retornado: OK
-?[36m21:03:20.338?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
+?[36m23:43:10.800?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.integracoes.CorroboradorDeDadosItau br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getCorroborador()
+?[36m23:43:10.808?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Corroborando dados do clienteId de95a228-1f27-4ad2-907e-e5a2d816e9bc e tipo de conta UNRECOGNIZED_ACCOUNT
+?[36m23:43:10.817?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - A corroboraçao de dados foi realizada com sucesso. Status retornado: OK
+Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
+Hibernate: delete from chave_pix
+?[36m23:43:10.840?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
+?[36m23:43:10.840?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
+?[36m23:43:10.840?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
+?[36m23:43:10.840?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: RANDOM
+?[36m23:43:10.872?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
+Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
+?[36m23:43:10.874?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.integracoes.CorroboradorDeDadosItau br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getCorroborador()
+?[36m23:43:10.874?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Corroborando dados do clienteId de95a228-1f27-4ad2-907e-e5a2d816e9bc e tipo de conta CONTA_CORRENTE
+?[36m23:43:10.875?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - A corroboraçao de dados foi realizada com sucesso. Status retornado: OK
+?[36m23:43:10.876?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
 Hibernate: insert into chave_pix (chave, cliente_id, criado_em, tipo_de_chave, tipo_de_conta, pix_id) values (?, ?, ?, ?, ?, ?)
-?[36m21:03:20.343?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Pix cadastrado com sucesso. Pix id: 2d6c9ba3-39ba-4cd8-a09a-663ae99ff0f8
+?[36m23:43:10.884?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Pix cadastrado com sucesso. Pix id: bb235f75-2838-4372-bb0b-52d47dbc47e2
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.pix_id=?
 Hibernate: delete from chave_pix
-?[36m21:03:20.357?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
-?[36m21:03:20.358?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
-?[36m21:03:20.358?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
-?[36m21:03:20.358?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: CPF
-?[36m21:03:20.358?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
+?[36m23:43:10.916?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
+?[36m23:43:10.916?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
+?[36m23:43:10.916?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
+?[36m23:43:10.916?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: CPF
+?[36m23:43:10.917?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
-?[36m21:03:20.359?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.integracoes.CorroboradorDeDadosItau br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getCorroborador()
-?[36m21:03:20.359?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Corroborando dados do clienteId de95a228-1f27-4ad2-907e-e5a2d816e9bc e tipo de conta CONTA_POUPANCA
-?[36m21:03:20.360?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[31mWARN ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Dados nao encontrados!
-Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
-Hibernate: delete from chave_pix
-?[36m21:03:20.367?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
-?[36m21:03:20.367?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
-?[36m21:03:20.367?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
-?[36m21:03:20.368?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: RANDOM
+?[36m23:43:10.919?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.integracoes.CorroboradorDeDadosItau br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getCorroborador()
+?[36m23:43:10.919?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Corroborando dados do clienteId de95a228-1f27-4ad2-907e-e5a2d816e9bc e tipo de conta CONTA_POUPANCA
+?[36m23:43:10.920?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[31mWARN ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Dados nao encontrados!
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
 Hibernate: delete from chave_pix
-?[36m21:03:20.378?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
-?[36m21:03:20.378?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
-?[36m21:03:20.378?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
-?[36m21:03:20.378?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: EMAIL
+?[36m23:43:10.941?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
+?[36m23:43:10.942?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
+?[36m23:43:10.942?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
+?[36m23:43:10.942?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: RANDOM
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
 Hibernate: delete from chave_pix
-?[36m21:03:20.388?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
-?[36m21:03:20.388?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
-?[36m21:03:20.389?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
-?[36m21:03:20.389?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: EMAIL
-?[36m21:03:20.389?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
+?[36m23:43:10.969?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
+?[36m23:43:10.969?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
+?[36m23:43:10.969?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
+?[36m23:43:10.970?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: EMAIL
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
-?[36m21:03:20.391?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.integracoes.CorroboradorDeDadosItau br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getCorroborador()
-?[36m21:03:20.391?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Corroborando dados do clienteId de95a228-1f27-4ad2-907e-e5a2d816e9bc e tipo de conta CONTA_CORRENTE
-?[36m21:03:20.393?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - A corroboraçao de dados foi realizada com sucesso. Status retornado: OK
-?[36m21:03:20.393?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
+Hibernate: delete from chave_pix
+?[36m23:43:10.985?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
+?[36m23:43:10.985?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
+?[36m23:43:10.985?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
+?[36m23:43:10.986?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: EMAIL
+?[36m23:43:10.986?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
+Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
+?[36m23:43:10.988?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.integracoes.CorroboradorDeDadosItau br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getCorroborador()
+?[36m23:43:10.989?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Corroborando dados do clienteId de95a228-1f27-4ad2-907e-e5a2d816e9bc e tipo de conta CONTA_CORRENTE
+?[36m23:43:10.990?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - A corroboraçao de dados foi realizada com sucesso. Status retornado: OK
+?[36m23:43:10.990?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
 Hibernate: insert into chave_pix (chave, cliente_id, criado_em, tipo_de_chave, tipo_de_conta, pix_id) values (?, ?, ?, ?, ?, ?)
-?[36m21:03:20.398?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Pix cadastrado com sucesso. Pix id: 76b3b7ce-63a6-431e-8694-2055468d1b7b
+?[36m23:43:10.997?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Pix cadastrado com sucesso. Pix id: f591d8de-e062-4814-ae7a-7c61785482b8
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.pix_id=?
 Hibernate: delete from chave_pix
-?[36m21:03:20.410?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
-?[36m21:03:20.410?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
-?[36m21:03:20.410?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
-?[36m21:03:20.410?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: CPF
+?[36m23:43:11.018?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
+?[36m23:43:11.018?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id de95a228-1f27-4ad2-907e-e5a2d816e9bc
+?[36m23:43:11.018?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
+?[36m23:43:11.018?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: CPF
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
 Hibernate: delete from chave_pix
-?[36m21:03:20.424?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
-?[36m21:03:20.425?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id 12
-?[36m21:03:20.425?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
-?[36m21:03:20.425?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: CPF
-?[36m21:03:20.425?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
+?[36m23:43:11.040?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public void br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(br.com.zupacademy.achiley.CadastroPixRequest,io.grpc.stub.StreamObserver)
+?[36m23:43:11.041?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.pix.CadastroPixEndpoint?[0;39m - Nova tentativa de cadastro de pix para o cliente id 12
+?[36m23:43:11.041?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.shared.validators.ValidadorDePix br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getValidador()
+?[36m23:43:11.041?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.v.ValidadorDePix?[0;39m - Iniciando validacao. Tipo de chave: CPF
+?[36m23:43:11.041?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.pix.ChavePixRepository br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getRepository()
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
-?[36m21:03:20.426?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.integracoes.CorroboradorDeDadosItau br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getCorroborador()
-?[36m21:03:20.426?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Corroborando dados do clienteId 12 e tipo de conta CONTA_POUPANCA
-?[36m21:03:20.428?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[1;31mERROR?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Erro ao tentar corroborar os dados. Status: INTERNAL_SERVER_ERROR, Message: Internal Error
+?[36m23:43:11.044?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.s.e.h.ExceptionHandlerInterceptor?[0;39m - Interceptando o metodo: public br.com.zupacademy.achiley.keyManager.integracoes.CorroboradorDeDadosItau br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.getCorroborador()
+?[36m23:43:11.044?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[34mINFO ?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Corroborando dados do clienteId 12 e tipo de conta CONTA_POUPANCA
+?[36m23:43:11.048?[0;39m ?[1;30m[io-executor-thread-1]?[0;39m ?[1;31mERROR?[0;39m ?[35mb.c.z.a.k.i.CorroboradorDeDadosItau?[0;39m - Erro ao tentar corroborar os dados. Status: INTERNAL_SERVER_ERROR, Message: Internal Error
 Hibernate: select chavepix0_.pix_id as col_0_0_ from chave_pix chavepix0_ where chavepix0_.chave=?
-?[36m21:03:20.468?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown initiated...
-?[36m21:03:20.472?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown completed.
+?[36m23:43:11.118?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown initiated...
+?[36m23:43:11.121?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mcom.zaxxer.hikari.HikariDataSource?[0;39m - HikariPool-1 - Shutdown completed.
 </pre>
 </span>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>br.com.zupacademy.achiley.keyManager.shared.exceptions.AlreadyExistsException: Chave pix ja cadastrada
+<pre>[2021.08.26 23:43:06] (Coverage): Error during class instrumentation: br.com.zupacademy.achiley.keyManager.pix.DeletaPixEndpointTest: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2021.08.26 23:43:06] (Coverage): Error during class instrumentation: io.micronaut.configuration.jdbc.hikari.DatasourceFactory: java.lang.RuntimeException: java.io.IOException: Class io/micrometer/core/instrument/MeterRegistry not found
+[2021.08.26 23:43:06] (Coverage): Error during class instrumentation: br.com.zupacademy.achiley.keyManager.shared.exceptions.handler.ExceptionHandlerInterceptor: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2021.08.26 23:43:10] (Coverage): Error during class instrumentation: kotlin.text.Regex: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+br.com.zupacademy.achiley.keyManager.shared.exceptions.AlreadyExistsException: Chave pix ja cadastrada
 	at br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(CadastroPixEndpoint.kt:32)
 	at br.com.zupacademy.achiley.keyManager.pix.$CadastroPixEndpoint$Definition$Intercepted.$$access$$cadastrar(Unknown Source)
 	at br.com.zupacademy.achiley.keyManager.pix.$CadastroPixEndpoint$Definition$Exec.dispatch(Unknown Source)
@@ -333,6 +337,11 @@ java.lang.IllegalArgumentException: Tipo de conta invalido
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
+[2021.08.26 23:43:10] (Coverage): Error during class instrumentation: kotlin.text.StringsKt___StringsKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2021.08.26 23:43:10] (Coverage): Error during class instrumentation: kotlin.text.StringsKt__StringsKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2021.08.26 23:43:10] (Coverage): Error during class instrumentation: kotlin.text.StringsKt__StringsJVMKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2021.08.26 23:43:10] (Coverage): Error during class instrumentation: kotlin.text.StringsKt__StringNumberConversionsJVMKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
+[2021.08.26 23:43:10] (Coverage): Error during class instrumentation: kotlin.text.StringsKt__IndentKt: java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 14
 br.com.zupacademy.achiley.keyManager.shared.exceptions.NotFoundException: Dados inválidos! Por favor, verifique suas informaçoes e tente novamente.
 	at br.com.zupacademy.achiley.keyManager.integracoes.CorroboradorDeDadosItau.corroboraDados(CorroboradorDeDadosItau.kt:23)
 	at br.com.zupacademy.achiley.keyManager.pix.CadastroPixEndpoint.cadastrar(CadastroPixEndpoint.kt:34)
@@ -442,7 +451,7 @@ br.com.zupacademy.achiley.keyManager.shared.exceptions.ClientErrorException: Nao
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at Aug 26, 2021, 9:03:20 PM</p>
+<a href="http://www.gradle.org">Gradle 7.2</a> at Aug 26, 2021, 11:43:12 PM</p>
 </div>
 </div>
 </body>

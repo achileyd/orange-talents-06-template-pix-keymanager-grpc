@@ -17,9 +17,9 @@ public enum TipoDeChaveEnum
    */
   CPF(1),
   /**
-   * <code>CELULAR = 2;</code>
+   * <code>PHONE = 2;</code>
    */
-  CELULAR(2),
+  PHONE(2),
   /**
    * <code>EMAIL = 3;</code>
    */
@@ -40,9 +40,9 @@ public enum TipoDeChaveEnum
    */
   public static final int CPF_VALUE = 1;
   /**
-   * <code>CELULAR = 2;</code>
+   * <code>PHONE = 2;</code>
    */
-  public static final int CELULAR_VALUE = 2;
+  public static final int PHONE_VALUE = 2;
   /**
    * <code>EMAIL = 3;</code>
    */
@@ -79,7 +79,7 @@ public enum TipoDeChaveEnum
     switch (value) {
       case 0: return UNRECOGNIZED_KEY;
       case 1: return CPF;
-      case 2: return CELULAR;
+      case 2: return PHONE;
       case 3: return EMAIL;
       case 4: return RANDOM;
       default: return null;

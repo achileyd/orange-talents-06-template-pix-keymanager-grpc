@@ -4,7 +4,7 @@ import br.com.zupacademy.achiley.CadastroPixRequest
 import br.com.zupacademy.achiley.KeyManagerGrpcServiceGrpc
 import br.com.zupacademy.achiley.TipoDeChaveEnum
 import br.com.zupacademy.achiley.TipoDeContaEnum
-import br.com.zupacademy.achiley.keyManager.integracoes.ItauClient
+import br.com.zupacademy.achiley.keyManager.integracoes.itau.ItauClient
 import br.com.zupacademy.achiley.keyManager.integracoes.ItauClientCorroboracaoResponse
 import br.com.zupacademy.achiley.keyManager.pix.creators.criaItauResponse
 import io.grpc.ManagedChannel
@@ -123,7 +123,7 @@ internal class CadastroPixEndpointTest(
     @Test
     fun `nao deve cadastrar uma chave pix com tipo de conta unregonized account`() {
         val novaChave = CadastroPixRequest.newBuilder()
-            .setTipoDeChave(TipoDeChaveEnum.CELULAR)
+            .setTipoDeChave(TipoDeChaveEnum.PHONE)
             .setChave("+5569981771835")
             .setClienteId("de95a228-1f27-4ad2-907e-e5a2d816e9bc")
             .setTipoDeConta(TipoDeContaEnum.UNRECOGNIZED_ACCOUNT)
@@ -145,7 +145,7 @@ internal class CadastroPixEndpointTest(
     @Test
     fun `nao deve cadastrar uma chave pix com formato de celular invalido`() {
         val novaChave = CadastroPixRequest.newBuilder()
-            .setTipoDeChave(TipoDeChaveEnum.CELULAR)
+            .setTipoDeChave(TipoDeChaveEnum.PHONE)
             .setChave("123456789")
             .setClienteId("de95a228-1f27-4ad2-907e-e5a2d816e9bc")
             .setTipoDeConta(TipoDeContaEnum.CONTA_POUPANCA)
@@ -238,14 +238,6 @@ internal class CadastroPixEndpointTest(
         }
     }
 
-    fun mockItauClientResponse(pixRequest: CadastroPixRequest): ItauClientCorroboracaoResponse {
-        val itauResponse = criaItauResponse(pixRequest.clienteId, pixRequest.tipoDeConta)
-        BDDMockito.`when`(itauClient.corroborarDados(pixRequest.clienteId, pixRequest.tipoDeConta)).thenReturn(
-            HttpResponse.ok(itauResponse)
-        )
-        return itauResponse
-    }
-
     @Test
     fun `nao deve cadastrar uma chave pix quando o itau client retorna um erro`() {
         val novaChave = CadastroPixRequest.newBuilder()
@@ -290,6 +282,14 @@ internal class CadastroPixEndpointTest(
             assertEquals(Status.NOT_FOUND.code, this.status.code)
             assertFalse(repository.existsByChave(novaChave.chave))
         }
+    }
+
+    fun mockItauClientResponse(pixRequest: CadastroPixRequest): ItauClientCorroboracaoResponse {
+        val itauResponse = criaItauResponse(pixRequest.clienteId, pixRequest.tipoDeConta)
+        BDDMockito.`when`(itauClient.corroborarDados(pixRequest.clienteId, pixRequest.tipoDeConta)).thenReturn(
+            HttpResponse.ok(itauResponse)
+        )
+        return itauResponse
     }
 
     @MockBean(ItauClient::class)

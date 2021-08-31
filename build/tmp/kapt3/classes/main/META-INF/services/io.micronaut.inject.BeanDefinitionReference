@@ -1,9 +1,12 @@
 br.com.zupacademy.achiley.keyManager.pix.$CadastroPixEndpoint$Definition$Intercepted$Definition$Reference
 br.com.zupacademy.achiley.keyManager.shared.validators.$ValidadorDePix$Definition$Reference
-br.com.zupacademy.achiley.keyManager.shared.exceptions.handler.$ExceptionHandlerInterceptor$Definition$Reference
+br.com.zupacademy.achiley.keyManager.integracoes.bcb.create.$CriadorDeChaveBcb$Definition$Reference
+br.com.zupacademy.achiley.keyManager.integracoes.itau.$ItauClient$Intercepted$Definition$Reference
+br.com.zupacademy.achiley.keyManager.integracoes.bcb.$BcbClient$Intercepted$Definition$Reference
 br.com.zupacademy.achiley.keyManager.pix.$ChavePixRepository$Intercepted$Definition$Reference
-br.com.zupacademy.achiley.keyManager.integracoes.$ItauClient$Intercepted$Definition$Reference
+br.com.zupacademy.achiley.keyManager.shared.exceptions.handler.$ExceptionHandlerInterceptor$Definition$Reference
+br.com.zupacademy.achiley.keyManager.integracoes.itau.$CorroboradorDeDadosItau$Definition$Reference
 br.com.zupacademy.achiley.keyManager.pix.$CadastroPixEndpoint$Definition$Reference
 br.com.zupacademy.achiley.keyManager.pix.$DeletaPixEndpoint$Definition$Intercepted$Definition$Reference
-br.com.zupacademy.achiley.keyManager.integracoes.$CorroboradorDeDadosItau$Definition$Reference
 br.com.zupacademy.achiley.keyManager.pix.$DeletaPixEndpoint$Definition$Reference
+br.com.zupacademy.achiley.keyManager.integracoes.bcb.delete.$DeletadorDeChaveBcb$Definition$Reference

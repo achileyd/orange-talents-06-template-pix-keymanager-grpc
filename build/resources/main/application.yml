@@ -17,3 +17,4 @@ jpa:
         show_sql: true
 
 itau.client.url: ${ITAU_URL:`http://localhost:9091/api/v1`}
+bcb.client.url: ${BCB_URL:`http://localhost:8082/api/v1`}

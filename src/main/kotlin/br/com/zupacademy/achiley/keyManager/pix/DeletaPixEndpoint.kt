@@ -2,6 +2,9 @@ package br.com.zupacademy.achiley.keyManager.pix
 
 import br.com.zupacademy.achiley.DeletaPixRequest
 import br.com.zupacademy.achiley.KeyManagerDeleteServiceGrpc
+import br.com.zupacademy.achiley.keyManager.integracoes.bcb.delete.BcbClientDeletaChaveRequest
+import br.com.zupacademy.achiley.keyManager.integracoes.bcb.delete.DeletadorDeChaveBcb
+import br.com.zupacademy.achiley.keyManager.integracoes.itau.ItauClient
 import br.com.zupacademy.achiley.keyManager.shared.exceptions.ForbiddenException
 import br.com.zupacademy.achiley.keyManager.shared.exceptions.NotFoundException
 import br.com.zupacademy.achiley.keyManager.shared.exceptions.handler.ErrorHandler
@@ -12,7 +15,11 @@ import org.slf4j.LoggerFactory
 
 @Singleton
 @ErrorHandler
-class DeletaPixEndpoint(val repository: ChavePixRepository) :
+class DeletaPixEndpoint(
+    val repository: ChavePixRepository,
+    val deletadorDeChave: DeletadorDeChaveBcb,
+    val itauClient: ItauClient
+) :
     KeyManagerDeleteServiceGrpc.KeyManagerDeleteServiceImplBase() {
     private val log = LoggerFactory.getLogger(CadastroPixEndpoint::class.java)
 
@@ -33,8 +40,11 @@ class DeletaPixEndpoint(val repository: ChavePixRepository) :
             log.warn("O pix id ${chavePix.pixId} nao pertence ao cliente id ${request.clienteId}")
             throw ForbiddenException("Você não tem autorização para deletar esta chave pix!")
         }
+        val itauResponse = itauClient.buscaClientePeloId(request.clienteId)
+        val bcbRequest= BcbClientDeletaChaveRequest(chavePix.chave, itauResponse.getIspb())
+        deletadorDeChave.deletaChave(bcbRequest)
 
-        repository.deleteById(chavePix.pixId)
+        repository.deleteById(chavePix.pixId!!)
         log.info("Chave Pix ${chavePix.pixId} deletada com sucesso.")
 
         responseObserver!!.onNext(Empty.getDefaultInstance())

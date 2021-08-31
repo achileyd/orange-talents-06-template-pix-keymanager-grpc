@@ -17,7 +17,7 @@ class ValidadorDePix {
         when (tipoDeChave) {
             UNRECOGNIZED_KEY -> throw IllegalArgumentException("Tipo de chave invalido")
             CPF -> validaCpf(chave)
-            CELULAR -> validaCelular(chave)
+            PHONE -> validaPhone(chave)
             EMAIL -> validaEmail(chave)
             RANDOM -> validaRandom(chave)
         }
@@ -25,21 +25,21 @@ class ValidadorDePix {
 
     fun validaCpf(chave: String) {
         val possivelChave = chave.matches("^[0-9]{11}\$".toRegex())
-        if (possivelChave == false) {
+        if (!possivelChave) {
             throw IllegalArgumentException("O cpf indicado não é válido!")
         }
     }
 
-    fun validaCelular(chave: String) {
+    fun validaPhone(chave: String) {
         val possivelChave = chave.matches("^\\+[1-9][0-9]\\d{1,14}\$".toRegex())
-        if (possivelChave == false) {
+        if (!possivelChave) {
             throw IllegalArgumentException("O celular indicado não é válido!")
         }
     }
 
     fun validaEmail(chave: String) {
         val possivelChave = chave.matches(("[a-zA-Z0-9_.]+@[a-zA-Z0-9]+.[a-zA-Z]{2,3}[.] {0,1}[a-zA-Z]+").toRegex())
-        if (possivelChave == false) {
+        if (!possivelChave) {
             throw IllegalArgumentException("O email indicado não é válido!")
         }
     }

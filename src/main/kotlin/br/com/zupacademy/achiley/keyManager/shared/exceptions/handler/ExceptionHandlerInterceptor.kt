@@ -36,43 +36,15 @@ class ExceptionHandlerInterceptor: MethodInterceptor<BindableService, Any?> {
                 is IllegalArgumentException -> Status.INVALID_ARGUMENT.withDescription(e.message).asRuntimeException()
                 is IllegalStateException -> Status.FAILED_PRECONDITION.withDescription(e.message).asRuntimeException()
                 is AlreadyExistsException -> Status.ALREADY_EXISTS.withDescription(e.message).asRuntimeException()
-                is ConstraintViolationException -> handleConstraintViolationException(e)
                 is NotFoundException -> Status.NOT_FOUND.withDescription(e.message).asRuntimeException()
                 is ClientErrorException -> Status.UNAVAILABLE.withDescription(e.message).asRuntimeException()
                 is ForbiddenException -> Status.PERMISSION_DENIED.withDescription(e.message).asRuntimeException()
-                else -> Status.UNKNOWN.withDescription("Erro inesperado").asRuntimeException()
+                else -> Status.UNKNOWN.withDescription("Erro inesperado! Por favor, tente novamente mais tarde.").asRuntimeException()
             }
 
             val responseObserver = context.parameterValues[1] as StreamObserver<*>
             responseObserver.onError(statusError)
             return null
         }
-    }
-
-    private fun handleConstraintViolationException(
-        e: ConstraintViolationException
-    ): StatusRuntimeException {
-        e.printStackTrace()
-
-        val violations = e.constraintViolations.map {
-            BadRequest.FieldViolation.newBuilder()
-                .setField(it.propertyPath.last().name) // documento: must not be blank
-                .setDescription(it.message)
-                .build()
-        }
-
-        val details = BadRequest.newBuilder()
-            .addAllFieldViolations(violations)
-            .build()
-
-        val statusProto = com.google.rpc.Status.newBuilder()
-            .setCode(Status.INVALID_ARGUMENT.code.value())
-            .setMessage("parametros de entrada invalidos")
-            .addDetails(com.google.protobuf.Any.pack(details)) // array de bytes
-            .build()
-
-        log.error("statusProto = $statusProto")
-
-        return StatusProto.toStatusRuntimeException(statusProto)
     }
 }

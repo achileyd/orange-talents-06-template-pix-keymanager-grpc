@@ -46,19 +46,19 @@ public final class KeyManagerGrpc {
       "\022?\n\013tipoDeConta\030\004 \001(\0162*.br.com.zupacadem" +
       "y.achiley.TipoDeContaEnum\"$\n\023CadastroPix" +
       "Response\022\r\n\005pixId\030\001 \001(\t\"4\n\020DeletaPixRequ" +
-      "est\022\021\n\tclienteId\030\001 \001(\t\022\r\n\005pixId\030\002 \001(\t*T\n" +
+      "est\022\021\n\tclienteId\030\001 \001(\t\022\r\n\005pixId\030\002 \001(\t*R\n" +
       "\017TipoDeChaveEnum\022\024\n\020UNRECOGNIZED_KEY\020\000\022\007" +
-      "\n\003CPF\020\001\022\013\n\007CELULAR\020\002\022\t\n\005EMAIL\020\003\022\n\n\006RANDO" +
-      "M\020\004*S\n\017TipoDeContaEnum\022\030\n\024UNRECOGNIZED_A" +
-      "CCOUNT\020\000\022\022\n\016CONTA_POUPANCA\020\001\022\022\n\016CONTA_CO" +
-      "RRENTE\020\0022\205\001\n\025KeyManagerGrpcService\022l\n\tca" +
-      "dastrar\022-.br.com.zupacademy.achiley.Cada" +
-      "stroPixRequest\032..br.com.zupacademy.achil" +
-      "ey.CadastroPixResponse\"\0002k\n\027KeyManagerDe" +
-      "leteService\022P\n\007deletar\022+.br.com.zupacade" +
-      "my.achiley.DeletaPixRequest\032\026.google.pro" +
-      "tobuf.Empty\"\000B3\n\031br.com.zupacademy.achil" +
-      "eyB\016KeyManagerGrpcP\001\242\002\003HLWb\006proto3"
+      "\n\003CPF\020\001\022\t\n\005PHONE\020\002\022\t\n\005EMAIL\020\003\022\n\n\006RANDOM\020" +
+      "\004*S\n\017TipoDeContaEnum\022\030\n\024UNRECOGNIZED_ACC" +
+      "OUNT\020\000\022\022\n\016CONTA_POUPANCA\020\001\022\022\n\016CONTA_CORR" +
+      "ENTE\020\0022\205\001\n\025KeyManagerGrpcService\022l\n\tcada" +
+      "strar\022-.br.com.zupacademy.achiley.Cadast" +
+      "roPixRequest\032..br.com.zupacademy.achiley" +
+      ".CadastroPixResponse\"\0002k\n\027KeyManagerDele" +
+      "teService\022P\n\007deletar\022+.br.com.zupacademy" +
+      ".achiley.DeletaPixRequest\032\026.google.proto" +
+      "buf.Empty\"\000B3\n\031br.com.zupacademy.achiley" +
+      "B\016KeyManagerGrpcP\001\242\002\003HLWb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
